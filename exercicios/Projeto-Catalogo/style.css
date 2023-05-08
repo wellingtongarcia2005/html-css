@@ -1,11 +1,8 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'magma';
-    src: url('./fontes/magma.ttf') format('truetype');
-    font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
     padding: 0px;
@@ -19,16 +16,20 @@
     --cor3: #176087;
     --cor4: #1B264F;
     --cor5: #FF9966; 
-
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'magma';
+    --fonte-destaque: 'Dancing Script', cursive;
+    --fonte: 'Bebas Neue', 'cursive';
 }
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
+    font-family: var(--fonte-destaque);
+    color: var(--cor5);
+    font-size: 2em;
 }
+
 
 nav {
     background-color: var(--cor1);
@@ -71,10 +72,10 @@ main h1 {
 }
 
 main h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte);
     color: var(--cor3);
     font-weight: normal;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 h2#subtitulo {
@@ -89,6 +90,8 @@ h3 {
     margin-bottom: 20px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    color: white;
+    font-family: var(--fonte);
 }
 
 main p {
@@ -99,6 +102,7 @@ main p {
     line-height: 2em;
     margin-bottom: 30px;
     margin-top: 30px;
+    font-family: var(--fonte-padrao);
 }
 
 div {
@@ -136,4 +140,27 @@ p.descricao {
     margin-top: 30px;
 }
 
+div#conteiner {
+    overflow-x: auto;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    width: 600px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+caption {
+    font-size: 2em;
+    font-family: var(--fonte);
+    color: #FF9966;
+}
 
