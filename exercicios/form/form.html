@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+
+    <fieldset>
+        <legend>Informações pessoais</legend>
+        <p>Nome:</p> <br>
+        <input type="text" name="nome" required autofocus placeholder="Seu nome"> <br>
+        <p>Senha:</p> <br>
+        <input type="password" name="senha" required minlength="5" placeholder="mínimo de caracteres 5"> <br>
+        <input type="submit" name="btn-enviar" value="submit">
+        <p>Email:</p> <br>
+        <input type="email" name="email" required autocomplete="on" placeholder="seuemail@gmail.com">
+        <p>Time:</p> <br>
+        <input type="radio" name="time" value="palmeiras" checked> Palmeiras <br>
+        <input type="radio" name="time" value="santos"> Santos <br>
+        <input type="radio" name="time" value="são paulo"> São Paulo <br>
+        <input type="radio" name="time" value="corinthians"> Corinthians <br>
+        <br>
+        <p>Cores:</p> <br>
+        <input type="checkbox" name="cores" value="verde" checked> Verde <br>
+        <input type="checkbox" name="cores" value="branco"> Branco <br>
+        <input type="checkbox" name="cores" value="vermelho"> Vermelho <br>
+        <input type="checkbox" name="cores" value="preto"> Preto <br>
+        <br>
+        <p>Quantidade:</p>
+        <input type="number" name="quantidade" min="0" max="1000" step="10">
+        <br><br>
+        <input type="range" name="quantidade"><br><br>
+        <p>Cor:</p><br>
+        <input type="color" name="cor">
+        <p>Imagem:</p><br>
+        <input type="file" name="imagem"><br><br>
+
+        <input type="hidden" name="id"><br><br>
+        <p>URL:</p><br>
+        <input type="url" name="site"><br><br>
+        <p>Search:</p><br>
+        <input type="search" name="pesquisa"><br><br>
+        <p>Telefone:</p><br>
+        <input type="tel" name="telefone">
+        <p>Data:</p><br>
+        <input type="date" name="data" min="1900-12-31" max="2023-12-31"><br><br>
+        <p>Hora</p><br>
+        <input type="time" name="hora"><br><br>
+        <p>Mês e Ano:</p><br>
+        <input type="month" name="mes-ano"><br><br>
+        <p>Semana</p><br>
+        <input type="week" name="semana">
+        <p>Data e Hora</p><br>
+        <input type="datetime-local" name="data-e-hora"><br><br>
+        <p>Mensagem</p><br>
+        <textarea name="mensagem" cols="30" rows="10" spellcheck="false"></textarea><br><br>
+        <button type="button">Clique-me</button><br><br>
+        <select name="veiculo">
+        <optgroup label="carros">
+            <option value="fusca">Fusca</option>
+            <option value="opala" selected>Opala</option>
+        </optgroup>
+        <optgroup label="motos">
+            <option value="hornet">Hornet</option>
+            <option value="kawasaki-ninja">Kawasaki-Ninja</option>
+        </optgroup>
+    </select>
+    <br><br>
+    </fieldset>
+
+    </form>
+</body>
+</html>
